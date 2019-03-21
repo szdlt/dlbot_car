@@ -2,10 +2,10 @@
 R
 modified from duncan
 load dependency
-"newbit": "file:../pxt-newbit"
+"哈姆小跑车": "file:../pxt-哈姆小跑车"
 */
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace newbit_显示类 {
+namespace 哈姆小跑车_显示类 {
     
     export enum enColor {
 
@@ -35,7 +35,7 @@ namespace newbit_显示类 {
         ON =1
     }
 
-    //% blockId=newbit_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=哈姆小跑车_LED1 block="LED1|pin %pin|value %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -46,7 +46,7 @@ namespace newbit_显示类 {
 
     }
 
-    //% blockId=newbit_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=哈姆小跑车_LED2 block="LED2|pin %pin|value %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -58,7 +58,7 @@ namespace newbit_显示类 {
 
     }
 
-    //% blockId=newbit_BreathLED block="BreathLED|pin %pin"
+    //% blockId=哈姆小跑车_BreathLED block="BreathLED|pin %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -79,7 +79,7 @@ namespace newbit_显示类 {
 
     }
 
-    //% blockId=newbit_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=哈姆小跑车_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -92,7 +92,7 @@ namespace newbit_显示类 {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=newbit_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=哈姆小跑车_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -158,7 +158,7 @@ namespace newbit_显示类 {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace newbit_传感器类 {
+namespace 哈姆小跑车_传感器类 {
 
     export enum enVoice {
         //% blockId="Voice" block="有声音"
@@ -442,7 +442,7 @@ namespace newbit_传感器类 {
            val = val + val_byte << 8;
            return val;
        }
-    //% blockId=newbit_initColorSensor block="initColorSensor|value %value"
+    //% blockId=哈姆小跑车_initColorSensor block="initColorSensor|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -456,7 +456,7 @@ namespace newbit_传感器类 {
         /*
 	 *  Color sensor to obtain color value.
 	 */
-    //% weight=84 blockId=newbit_checkCurrentColor block="checkCurrentColor|color %color" 
+    //% weight=84 blockId=哈姆小跑车_checkCurrentColor block="checkCurrentColor|color %color" 
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -522,7 +522,7 @@ namespace newbit_传感器类 {
         return (color == t);
 	}
   
-    //% blockId=newbit_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=哈姆小跑车_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -538,7 +538,7 @@ namespace newbit_传感器类 {
         }
 
     }
-    //% blockId=newbit_Incline_Sensor block="Incline_Sensor|pin %pin| |%value|倾斜"
+    //% blockId=哈姆小跑车_Incline_Sensor block="Incline_Sensor|pin %pin| |%value|倾斜"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -556,7 +556,7 @@ namespace newbit_传感器类 {
 
     }
 	
-    //% blockId=newbit_Smog_Sensor block="Smog_Sensor|pin %pin| |%value|烟雾"
+    //% blockId=哈姆小跑车_Smog_Sensor block="Smog_Sensor|pin %pin| |%value|烟雾"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -573,7 +573,7 @@ namespace newbit_传感器类 {
 
     }
 	
-    //% blockId=newbit_Touch_Sensor block="Touch_Sensor|pin %pin| |%value|触摸"
+    //% blockId=哈姆小跑车_Touch_Sensor block="Touch_Sensor|pin %pin| |%value|触摸"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -589,7 +589,7 @@ namespace newbit_传感器类 {
         }
 
     }
-    //% blockId=newbit_Photosensitive_Sensor block="Photosensitive_Sensor|pin %pin| |%value|光照"
+    //% blockId=哈姆小跑车_Photosensitive_Sensor block="Photosensitive_Sensor|pin %pin| |%value|光照"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -606,7 +606,7 @@ namespace newbit_传感器类 {
 
     }
 	
-    //% blockId=newbit_Flame_Sensor block="Flame_Sensor|pin %pin| |%value|火焰"
+    //% blockId=哈姆小跑车_Flame_Sensor block="Flame_Sensor|pin %pin| |%value|火焰"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -631,7 +631,7 @@ namespace newbit_传感器类 {
             control.waitMicros(13);
         }
     }
-    //% blockId=newbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
+    //% blockId=哈姆小跑车_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -649,7 +649,7 @@ namespace newbit_传感器类 {
 
     }
 
-    //% blockId=newbit_IR_Send block="IR_Send|pin %pin"
+    //% blockId=哈姆小跑车_IR_Send block="IR_Send|pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -661,7 +661,7 @@ namespace newbit_传感器类 {
 
     }
    
-    //% blockId=newbit_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=哈姆小跑车_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -687,7 +687,7 @@ namespace newbit_传感器类 {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace newbit_输入类 {
+namespace 哈姆小跑车_输入类 {
 
     export enum enRocker {
         //% blockId="Nostate" block="无"
@@ -717,7 +717,7 @@ namespace newbit_输入类 {
         Realse = 1
     }
 
-    //% blockId=newbit_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=哈姆小跑车_TouchPad block="TouchPad|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -733,7 +733,7 @@ namespace newbit_输入类 {
         }
 
     }
-    //% blockId=newbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=哈姆小跑车_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -777,7 +777,7 @@ namespace newbit_输入类 {
 
     }
 
-    //% blockId=newbit_Button block="Button|pin %pin|value %value"
+    //% blockId=哈姆小跑车_Button block="Button|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -800,7 +800,7 @@ namespace newbit_输入类 {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace newbit_音乐类 {
+namespace 哈姆小跑车_音乐类 {
     export enum enBuzzer {
 
         //% blockId="NoBeep" block="不响"
@@ -809,7 +809,7 @@ namespace newbit_音乐类 {
         Beep
     }
 
-    //% blockId=newbit_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=哈姆小跑车_Buzzer block="Buzzer|pin %pin|value %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -829,8 +829,8 @@ namespace newbit_音乐类 {
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace newbit_电机类 {
-    //% blockId=newbit_Vibrator_Open block="Vibrator_Open"
+namespace 哈姆小跑车_电机类 {
+    //% blockId=哈姆小跑车_Vibrator_Open block="Vibrator_Open"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -841,7 +841,7 @@ namespace newbit_电机类 {
         pins.digitalWritePin(DigitalPin.P12, 1);
 
     }
-    //% blockId=newbit_Vibrator_Close block="Vibrator_Close"
+    //% blockId=哈姆小跑车_Vibrator_Close block="Vibrator_Close"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -852,7 +852,7 @@ namespace newbit_电机类 {
         pins.digitalWritePin(DigitalPin.P12, 0);
 
     }
-    //% blockId=newbit_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=哈姆小跑车_Fan block="Fan|pin %pin|speed %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -864,7 +864,7 @@ namespace newbit_电机类 {
 
     }
 
-    //% blockId=newbit_Servo block="Servo|pin %pin|value %value"
+    //% blockId=哈姆小跑车_Servo block="Servo|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -879,7 +879,7 @@ namespace newbit_电机类 {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace newbit_小车类 {
+namespace 哈姆小跑车_小车类 {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -1206,7 +1206,7 @@ namespace newbit_小车类 {
      * *****************************************************************
      * @param index
      */
-    //% blockId=newbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=哈姆小跑车_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -1264,7 +1264,7 @@ namespace newbit_小车类 {
             }
         }
     }
-    //% blockId=newbit_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=哈姆小跑车_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -1289,7 +1289,7 @@ namespace newbit_小车类 {
 
     }
 
-    //% blockId=newbit_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=哈姆小跑车_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -1303,7 +1303,7 @@ namespace newbit_小车类 {
     }
 
 
-	//% blockId=newbit_ultrasonic_car block="ultrasonic return distance(cm)"
+	//% blockId=哈姆小跑车_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -1339,7 +1339,7 @@ namespace newbit_小车类 {
      //  return d / 58;
     }
 
-    //% blockId=newbit_Music_Car block="Music_Car|%index"
+    //% blockId=哈姆小跑车_Music_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -1368,7 +1368,7 @@ namespace newbit_小车类 {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=newbit_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=哈姆小跑车_Servo_Car block="Servo_Car|num %num|value %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -1383,7 +1383,7 @@ namespace newbit_小车类 {
 
     }
 
-    //% blockId=newbit_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=哈姆小跑车_Avoid_Sensor block="Avoid_Sensor|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -1423,7 +1423,7 @@ namespace newbit_小车类 {
         return temp;
 
     }
-    //% blockId=newbit_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=哈姆小跑车_Line_Sensor block="Line_Sensor|direct %direct|value %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1468,7 +1468,7 @@ namespace newbit_小车类 {
         return temp;
 
     }
-    //% blockId=newbit_CarCtrl block="CarCtrl|%index"
+    //% blockId=哈姆小跑车_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1484,7 +1484,7 @@ namespace newbit_小车类 {
             case CarState.Car_SpinRight: Car_spinright(255); break;
         }
     }
-    //% blockId=newbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=哈姆小跑车_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
